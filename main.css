@@ -1,0 +1,101 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0a0e2a; /* Deep Blue Background */
+  color: #f0f0f0;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center horizontally */
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.logo-container img {
+  width: 60px; /* adjust size */
+  height: 60px;
+  object-fit: contain;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #ffffff;
+}
+
+.tagline {
+  font-size: 1.15rem;
+  color: #9da9ff;
+  margin-top: 0.5rem;
+}
+
+/* Blog Container */
+#blog-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Individual Post */
+.post {
+  background-color: #121a3a;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.6s ease, box-shadow 0.3s ease, border 0.3s ease;
+  border: 1px solid transparent;
+  transform-origin: center center; /* center the rotation */
+}
+
+.post:hover {
+  transform: translateY(-6px) rotate(5deg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid #4d7cfe;
+}
+
+/* Image Section */
+.post-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content Section */
+.post-content {
+  padding: 1.5rem;
+}
+
+.post-content h2 {
+  font-size: 1.8rem;
+  color: #4d7cfe;
+  margin-bottom: 0.75rem;
+}
+
+.post-content p {
+  font-size: 1.05rem;
+  color: #cccccc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 0.9rem;
+  color: #888bbb;
+}
